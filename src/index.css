@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #0ea5e9;
+  --secondary: #8b5cf6;
+  --dark: #111827;
+  --light: #f9fafb;
+  --accent: #10b981;
+}
+
+body {
+  @apply bg-dark text-light font-sans;
+  overflow-x: hidden;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary;
+}
+
+.bg-grid {
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.bg-dots {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.glass {
+  @apply bg-dark-lighter bg-opacity-70 backdrop-blur-md border border-white/10 shadow-lg;
+}
+
+.card {
+  @apply glass rounded-xl p-6 transition-all duration-300 hover:shadow-primary/20 hover:shadow-lg;
+}
+
+.btn {
+  @apply px-6 py-2 rounded-lg font-medium transition-all duration-300 transform hover:scale-105;
+}
+
+.btn-primary {
+  @apply btn bg-primary hover:bg-primary-dark text-white;
+}
+
+.btn-secondary {
+  @apply btn bg-secondary hover:bg-secondary-dark text-white;
+}
+
+.btn-outline {
+  @apply btn border border-primary text-primary hover:bg-primary hover:text-white;
+}
+
+.nav-link {
+  @apply relative px-4 py-2 text-light-darker hover:text-white transition-colors duration-300;
+}
+
+.nav-link::after {
+  content: '';
+  @apply absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-secondary transition-all duration-300;
+}
+
+.nav-link:hover::after {
+  @apply w-full;
+}
+
+.nav-link.active {
+  @apply text-white;
+}
+
+.nav-link.active::after {
+  @apply w-full;
+}
+
+.glow-border {
+  @apply border border-primary/50 animate-glow;
+}
+
+.code-block {
+  @apply font-mono text-sm bg-dark-lightest p-4 rounded-lg overflow-x-auto;
+}
+
+.timeline-item {
+  @apply relative pl-8 pb-8 border-l border-dark-lightest;
+}
+
+.timeline-item::before {
+  content: '';
+  @apply absolute left-[-8px] top-0 w-4 h-4 rounded-full bg-primary;
+}
+
+.timeline-item:last-child {
+  @apply border-l-0;
+}
+
+.skill-badge {
+  @apply px-3 py-1 rounded-full text-sm font-medium bg-dark-lighter text-light-darker border border-dark-lightest transition-all duration-300 hover:border-primary/50 hover:text-white;
+}
+
+.project-card {
+  @apply card overflow-hidden;
+}
+
+.project-card:hover .project-overlay {
+  @apply opacity-100;
+}
+
+.project-overlay {
+  @apply absolute inset-0 bg-gradient-to-t from-dark to-transparent opacity-0 transition-opacity duration-300 flex flex-col justify-end p-6;
+}
+
+.contact-input {
+  @apply w-full bg-dark-lighter border border-dark-lightest rounded-lg px-4 py-3 text-light focus:outline-none focus:border-primary transition-colors duration-300;
+}
+
+.animated-bg {
+  background: linear-gradient(-45deg, #111827, #1e3a8a, #1e40af, #0ea5e9);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-dark-lighter;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-dark-lightest rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary/50;
+}
