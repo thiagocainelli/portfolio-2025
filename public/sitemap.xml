@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- Home Page -->
+  <url>
+    <loc>https://thiagocainelli.com.br/</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thiagocainelli.com.br/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://thiagocainelli.com.br/pt" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://thiagocainelli.com.br/es" />
+  </url>
+  
+  <!-- About Page -->
+  <url>
+    <loc>https://thiagocainelli.com.br/about</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thiagocainelli.dev/about" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://thiagocainelli.dev/pt/about" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://thiagocainelli.dev/es/about" />
+  </url>
+  
+  <!-- Contact Page -->
+  <url>
+    <loc>https://thiagocainelli.dev/contact</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thiagocainelli.dev/contact" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://thiagocainelli.dev/pt/contact" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://thiagocainelli.dev/es/contact" />
+  </url>
+  
+  <!-- Projects Page (when enabled) -->
+  <url>
+    <loc>https://thiagocainelli.dev/projects</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thiagocainelli.dev/projects" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://thiagocainelli.dev/pt/projects" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://thiagocainelli.dev/es/projects" />
+  </url>
+  
+  <!-- Skills Page (when enabled) -->
+  <url>
+    <loc>https://thiagocainelli.dev/skills</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thiagocainelli.dev/skills" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://thiagocainelli.dev/pt/skills" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://thiagocainelli.dev/es/skills" />
+  </url>
+  
+</urlset>

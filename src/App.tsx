@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Particles from "./components/Particles";
 import { LanguageProvider } from "./components/LanguageProvider";
+import SEO from "./components/SEO";
 
 // Pages
 import Home from "./pages/Home";
@@ -21,6 +22,7 @@ const App: React.FC = () => {
 
   return (
     <LanguageProvider>
+      <SEO />
       <ConfigProvider
         theme={{
           algorithm: theme.darkAlgorithm,
