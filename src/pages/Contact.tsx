@@ -1,10 +1,19 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Button, Form, Input, message } from "antd";
-import { Mail, Phone, MapPin, Send } from "lucide-react";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Send,
+  CheckCircle,
+  AlertCircle,
+} from "lucide-react";
 import { useTranslation } from "react-i18next";
 import AnimatedText from "../components/AnimatedText";
 import SEO from "../components/SEO";
+import { useEmailJS } from "../hooks/useEmailJS";
+import { getDefaultTemplateParams } from "../config/emailjs";
 
 const { TextArea } = Input;
 
@@ -18,20 +27,45 @@ interface FormValues {
 const Contact: React.FC = () => {
   const { t } = useTranslation();
   const [form] = Form.useForm();
-  const [loading, setLoading] = useState(false);
+  const { sendEmail, loading, isConfigured, error, success, resetStatus } =
+    useEmailJS();
 
-  const onFinish = (values: FormValues) => {
-    setLoading(true);
+  // Reset status when component unmounts or form changes
+  useEffect(() => {
+    return () => resetStatus();
+  }, [resetStatus]);
 
-    // Simulate form submission
-    setTimeout(() => {
-      console.log("Form values:", values);
+  // Show success/error messages
+  useEffect(() => {
+    if (success) {
       message.success(
         t("contact.form.sendSuccess") || "Message sent successfully!"
       );
       form.resetFields();
-      setLoading(false);
-    }, 1500);
+      resetStatus();
+    }
+  }, [success, form, resetStatus, t]);
+
+  useEffect(() => {
+    if (error) {
+      message.error(error);
+    }
+  }, [error]);
+
+  const onFinish = async (values: FormValues) => {
+    const templateParams = {
+      ...getDefaultTemplateParams(),
+      from_name: values.name,
+      from_email: values.email,
+      subject: values.subject,
+      message: values.message,
+    };
+
+    const emailSent = await sendEmail(templateParams);
+
+    if (emailSent) {
+      // Success is handled by useEffect
+    }
   };
 
   return (
@@ -95,7 +129,7 @@ const Contact: React.FC = () => {
                       {t("contact.info.phone")}
                     </h3>
                     <a
-                      href="tel:+1234567890"
+                      href="tel:+5516982514074"
                       className="text-light-darker hover:text-secondary transition-colors"
                     >
                       +55 (16) 98251-4074
@@ -188,6 +222,52 @@ const Contact: React.FC = () => {
                   {t("contact.form.title")}
                 </h2>
 
+                {/* EmailJS Configuration Status */}
+                {!isConfigured && (
+                  <div className="mb-4 p-4 bg-yellow-500/10 border border-yellow-500/20 rounded-lg">
+                    <div className="flex items-center gap-2 mb-2">
+                      <AlertCircle size={16} className="text-yellow-500" />
+                      <span className="text-yellow-500 font-medium">
+                        Configuração EmailJS
+                      </span>
+                    </div>
+                    <p className="text-yellow-500 text-sm">
+                      Para que o formulário funcione, configure as seguintes
+                      variáveis de ambiente:
+                    </p>
+                    <div className="mt-2 text-xs text-yellow-500/80 font-mono">
+                      <div>VITE_APP_EMAILJS_SERVICE_ID=seu_service_id</div>
+                      <div>VITE_APP_EMAILJS_TEMPLATE_ID=seu_template_id</div>
+                      <div>VITE_APP_EMAILJS_PUBLIC_KEY=sua_public_key</div>
+                    </div>
+                  </div>
+                )}
+
+                {/* Success Message */}
+                {success && (
+                  <div className="mb-4 p-4 bg-green-500/10 border border-green-500/20 rounded-lg">
+                    <div className="flex items-center gap-2">
+                      <CheckCircle size={16} className="text-green-500" />
+                      <span className="text-green-500 font-medium">
+                        Mensagem enviada com sucesso!
+                      </span>
+                    </div>
+                  </div>
+                )}
+
+                {/* Error Message */}
+                {error && (
+                  <div className="mb-4 p-4 bg-red-500/10 border border-red-500/20 rounded-lg">
+                    <div className="flex items-center gap-2">
+                      <AlertCircle size={16} className="text-red-500" />
+                      <span className="text-red-500 font-medium">
+                        Erro ao enviar mensagem
+                      </span>
+                    </div>
+                    <p className="text-red-500 text-sm mt-1">{error}</p>
+                  </div>
+                )}
+
                 <Form
                   form={form}
                   layout="vertical"
@@ -269,10 +349,11 @@ const Contact: React.FC = () => {
                       htmlType="submit"
                       size="large"
                       loading={loading}
+                      disabled={!isConfigured}
                       className="btn-primary w-full flex items-center justify-center gap-2"
                       icon={<Send size={18} />}
                     >
-                      {t("contact.form.send")}
+                      {loading ? "Enviando..." : t("contact.form.send")}
                     </Button>
                   </Form.Item>
                 </Form>
@@ -309,15 +390,6 @@ const Contact: React.FC = () => {
                   {t("contact.faq.questions.process.answer")}
                 </p>
               </div>
-
-              {/* <div className="card">
-                <h3 className="text-xl font-bold mb-3">
-                  {t("contact.faq.questions.freelance.question")}
-                </h3>
-                <p className="text-light-darker">
-                  {t("contact.faq.questions.freelance.answer")}
-                </p>
-              </div> */}
 
               <div className="card">
                 <h3 className="text-xl font-bold mb-3">
