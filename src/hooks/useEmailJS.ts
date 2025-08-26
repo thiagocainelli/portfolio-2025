@@ -57,7 +57,6 @@ export const useEmailJS = (): UseEmailJSReturn => {
 
       if (result.status === 200) {
         setSuccess(true);
-        console.log("Email sent successfully:", result);
         return true;
       } else {
         throw new Error(`EmailJS returned status: ${result.status}`);

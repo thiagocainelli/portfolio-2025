@@ -8,7 +8,6 @@ export const useLanguage = () => {
   useEffect(() => {
     const handleLanguageChanged = (lng: string) => {
       setCurrentLanguage(lng);
-      console.log("Language changed to:", lng);
     };
 
     i18n.on("languageChanged", handleLanguageChanged);
@@ -22,7 +21,6 @@ export const useLanguage = () => {
     try {
       await i18n.changeLanguage(lng);
       setCurrentLanguage(lng);
-      console.log("Language changed successfully to:", lng);
     } catch (error) {
       console.error("Error changing language:", error);
     }

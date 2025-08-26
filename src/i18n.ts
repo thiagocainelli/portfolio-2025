@@ -22,9 +22,9 @@ i18n
         translation: esCommon,
       },
     },
-    fallbackLng: "en",
+    fallbackLng: "pt",
     debug: false,
-    lng: "en",
+    lng: "pt",
 
     interpolation: {
       escapeValue: false,
