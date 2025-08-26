@@ -47,9 +47,7 @@ const About: React.FC = () => {
                   <div className="flex items-center justify-between mb-2">
                     <h3 className="font-bold">Thiago Cainelli</h3>
                   </div>
-                  <p className="text-sm text-light-darker">
-                    Fullstack Developer
-                  </p>
+                  <p className="text-sm text-light-darker">{t("home.badge")}</p>
                 </div>
               </div>
             </div>
@@ -136,64 +134,49 @@ const About: React.FC = () => {
           className="mb-20"
         >
           <h2 className="text-2xl font-bold mb-8 text-center">
-            Work Experience
+            {t("about.experience.title")}
           </h2>
 
           <div className="space-y-8">
             <div className="timeline-item">
               <div className="card ml-4">
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-                  <h3 className="text-xl font-bold">Fullstack Developer PL</h3>
+                  <h3 className="text-xl font-bold">
+                    {t("about.experience.jobs.pl.title")}
+                  </h3>
                   <div className="flex items-center gap-2">
-                    <span className="text-primary">Jan 2025 - Present</span>
+                    <span className="text-primary">
+                      {t("about.experience.jobs.pl.period")}
+                    </span>
                     <span className="px-2 py-1 text-xs bg-primary/20 text-primary rounded-full">
-                      Current
+                      {t("about.experience.current")}
                     </span>
                   </div>
                 </div>
                 <h4 className="text-light-darker mb-4">
-                  Fairy Solutions - Tecnologia e Inovação
+                  {t("about.experience.jobs.pl.company")}
                 </h4>
                 <div className="flex flex-col gap-2 mb-4">
-                  <p className="text-light-darker">
-                    - Developing and maintaining web applications using ReactJS,
-                    NestJS, and TypeScript, contributing across both frontend
-                    and backend.
-                  </p>
-                  <p className="text-light-darker">
-                    - Responsible for building and deploying scalable solutions
-                    in cloud environments (AWS, DigitalOcean, Azure).
-                  </p>
-                  <p className="text-light-darker">
-                    - Integrated the OpenAI API into platform features, enabling
-                    intelligent interactions and automation capabilities.
-                  </p>
-                  <p className="text-light-darker">
-                    - Collaborating in agile sprints with cross-functional
-                    teams, ensuring timely delivery of high-quality features.
-                  </p>
-                  <p className="text-light-darker">
-                    - Improving application performance and maintainability
-                    through continuous refactoring, documentation, and testing
-                    practices.
-                  </p>
+                  {(
+                    (t("about.experience.jobs.pl.responsibilities", {
+                      returnObjects: true,
+                    }) as string[]) || []
+                  ).map((responsibility: string, index: number) => (
+                    <p key={index} className="text-light-darker">
+                      - {responsibility}
+                    </p>
+                  ))}
                 </div>
                 <div className="flex flex-wrap gap-2">
-                  <span className="skill-badge">React.js</span>
-                  <span className="skill-badge">Next.js</span>
-                  <span className="skill-badge">TypeScript</span>
-                  <span className="skill-badge">TailwindCSS</span>
-                  <span className="skill-badge">Node.js</span>
-                  <span className="skill-badge">NestJS</span>
-                  <span className="skill-badge">PostgreSQL</span>
-                  <span className="skill-badge">AWS</span>
-                  <span className="skill-badge">DigitalOcean</span>
-                  <span className="skill-badge">Azure</span>
-                  <span className="skill-badge">OpenAI API</span>
-                  <span className="skill-badge">Jest</span>
-                  <span className="skill-badge">Cypress</span>
-                  <span className="skill-badge">Agile</span>
-                  <span className="skill-badge">Clean Code</span>
+                  {(
+                    (t("about.experience.jobs.pl.skills", {
+                      returnObjects: true,
+                    }) as string[]) || []
+                  ).map((skill: string, index: number) => (
+                    <span key={index} className="skill-badge">
+                      {skill}
+                    </span>
+                  ))}
                 </div>
               </div>
             </div>
@@ -202,89 +185,39 @@ const About: React.FC = () => {
               <div className="card ml-4">
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                   <h3 className="text-xl font-bold">
-                    Fullstack Developer and Software Development Lead
+                    {t("about.experience.jobs.lead.title")}
                   </h3>
                   <div className="flex items-center gap-2">
-                    <span className="text-primary">Jan 2025 - Jun 2025</span>
+                    <span className="text-primary">
+                      {t("about.experience.jobs.lead.period")}
+                    </span>
                   </div>
                 </div>
                 <h4 className="text-light-darker mb-4">
-                  Fairy Solutions - Tecnologia e Inovação
+                  {t("about.experience.jobs.lead.company")}
                 </h4>
 
                 <div className="flex flex-col gap-2 mb-4">
-                  <p className="text-light-darker">
-                    - Combined software development duties with the technical
-                    leadership of a 4-person engineering team, managing sprints,
-                    priorities, and successful project deliveries.
-                  </p>
-                  <p className="text-light-darker">
-                    - Contributed broadly to front-end and back-end development
-                    using ReactJS, NestJS, TypeScript, and PostgreSQL, handling
-                    a wide range of features, refactors, and integrations.
-                  </p>
-                  <p className="text-light-darker">
-                    - Collaborated closely with stakeholders to align technical
-                    execution with business goals, using agile methodologies and
-                    tools like Git and ClickUp.
-                  </p>
+                  {(
+                    (t("about.experience.jobs.lead.responsibilities", {
+                      returnObjects: true,
+                    }) as string[]) || []
+                  ).map((responsibility: string, index: number) => (
+                    <p key={index} className="text-light-darker">
+                      - {responsibility}
+                    </p>
+                  ))}
                 </div>
                 <div className="flex flex-wrap gap-2">
-                  <span className="skill-badge">React.js</span>
-                  <span className="skill-badge">TypeScript</span>
-                  <span className="skill-badge">TailwindCSS</span>
-                  <span className="skill-badge">Node.js</span>
-                  <span className="skill-badge">NestJS</span>
-                  <span className="skill-badge">PostgreSQL</span>
-                  <span className="skill-badge">Agile</span>
-                  <span className="skill-badge">Clean Code</span>
-                  <span className="skill-badge">Leadership</span>
-                  <span className="skill-badge">API Development</span>
-                  <span className="skill-badge">Software Architecture</span>
-                  <span className="skill-badge">Git</span>
-                  <span className="skill-badge">ClickUp</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="timeline-item">
-              <div className="card ml-4">
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-                  <h3 className="text-xl font-bold">Full Stack Developer</h3>
-                  <span className="text-primary">Feb 2024 - Feb 2025</span>
-                </div>
-                <h4 className="text-light-darker mb-4">
-                  Fairy Solutions - Tecnologia e Inovação
-                </h4>
-                <div className="flex flex-col gap-2 mb-4">
-                  <p className="text-light-darker">
-                    - Developed and maintained scalable full-stack applications
-                    using ReactJS, NestJS, TypeScript, and PostgreSQL.
-                  </p>
-                  <p className="text-light-darker">
-                    - Led integrations with third-party APIs, increasing data
-                    reliability and consistency by 30%.
-                  </p>
-                </div>
-                <div className="flex flex-col gap-2 mb-4">
-                  <p className="text-light-darker">
-                    - Refactored and optimized legacy codebases, improving
-                    application performance and reducing technical debt by 45%.
-                  </p>
-                </div>
-                <div className="flex flex-col gap-2 mb-4">
-                  <p className="text-light-darker">
-                    - Actively participated in agile sprints and team
-                    collaboration using Git and ClickUp.
-                  </p>
-                </div>
-                <div className="flex flex-wrap gap-2">
-                  <span className="skill-badge">Next.js</span>
-                  <span className="skill-badge">React.js</span>
-                  <span className="skill-badge">Node.js</span>
-                  <span className="skill-badge">TypeScript</span>
-                  <span className="skill-badge">NestJS</span>
-                  <span className="skill-badge">PostgreSQL</span>
+                  {(
+                    (t("about.experience.jobs.lead.skills", {
+                      returnObjects: true,
+                    }) as string[]) || []
+                  ).map((skill: string, index: number) => (
+                    <span key={index} className="skill-badge">
+                      {skill}
+                    </span>
+                  ))}
                 </div>
               </div>
             </div>
@@ -293,35 +226,74 @@ const About: React.FC = () => {
               <div className="card ml-4">
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                   <h3 className="text-xl font-bold">
-                    Frontend Developer (Freelancer)
+                    {t("about.experience.jobs.fullstack.title")}
                   </h3>
-                  <span className="text-primary">Jun 2023 - Dec 2023</span>
+                  <span className="text-primary">
+                    {t("about.experience.jobs.fullstack.period")}
+                  </span>
                 </div>
-                <h4 className="text-light-darker mb-4">Freelancer</h4>
+                <h4 className="text-light-darker mb-4">
+                  {t("about.experience.jobs.fullstack.company")}
+                </h4>
                 <div className="flex flex-col gap-2 mb-4">
-                  <p className="text-light-darker">
-                    - Developed modern, high-performance interfaces for landing
-                    pages, websites, and web systems, focusing on responsiveness
-                    and user experience.
-                  </p>
-                  <p className="text-light-darker">
-                    - Worked across the full stack using ReactJS (frontend) and
-                    Node.js (backend), including API integrations, state
-                    management, and performance optimization.
-                  </p>
-                  <p className="text-light-darker">
-                    - Managed the entire development lifecycle — from
-                    architecture and implementation to testing and delivery.
-                  </p>
+                  {(
+                    (t("about.experience.jobs.fullstack.responsibilities", {
+                      returnObjects: true,
+                    }) as string[]) || []
+                  ).map((responsibility: string, index: number) => (
+                    <p key={index} className="text-light-darker">
+                      - {responsibility}
+                    </p>
+                  ))}
                 </div>
                 <div className="flex flex-wrap gap-2">
-                  <span className="skill-badge">React.js</span>
-                  <span className="skill-badge">Node.js</span>
-                  <span className="skill-badge">Express</span>
-                  <span className="skill-badge">PostgreSQL</span>
-                  <span className="skill-badge">TypeScript</span>
-                  <span className="skill-badge">TailwindCSS</span>
-                  <span className="skill-badge">Git</span>
+                  {(
+                    (t("about.experience.jobs.fullstack.skills", {
+                      returnObjects: true,
+                    }) as string[]) || []
+                  ).map((skill: string, index: number) => (
+                    <span key={index} className="skill-badge">
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            <div className="timeline-item">
+              <div className="card ml-4">
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                  <h3 className="text-xl font-bold">
+                    {t("about.experience.jobs.freelancer.title")}
+                  </h3>
+                  <span className="text-primary">
+                    {t("about.experience.jobs.freelancer.period")}
+                  </span>
+                </div>
+                <h4 className="text-light-darker mb-4">
+                  {t("about.experience.jobs.freelancer.company")}
+                </h4>
+                <div className="flex flex-col gap-2 mb-4">
+                  {(
+                    (t("about.experience.jobs.freelancer.responsibilities", {
+                      returnObjects: true,
+                    }) as string[]) || []
+                  ).map((responsibility: string, index: number) => (
+                    <p key={index} className="text-light-darker">
+                      - {responsibility}
+                    </p>
+                  ))}
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  {(
+                    (t("about.experience.jobs.freelancer.skills", {
+                      returnObjects: true,
+                    }) as string[]) || []
+                  ).map((skill: string, index: number) => (
+                    <span key={index} className="skill-badge">
+                      {skill}
+                    </span>
+                  ))}
                 </div>
               </div>
             </div>
@@ -335,7 +307,7 @@ const About: React.FC = () => {
           viewport={{ once: true }}
         >
           <h2 className="text-2xl font-bold mb-8 text-center">
-            Education & Certifications
+            {t("about.education.title")}
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -344,28 +316,38 @@ const About: React.FC = () => {
                 <div className="p-2 rounded-lg bg-dark-lightest text-primary">
                   <BookOpen size={20} />
                 </div>
-                <h3 className="text-xl font-bold">Education</h3>
+                <h3 className="text-xl font-bold">
+                  {t("about.education.education.title")}
+                </h3>
               </div>
 
               <div className="space-y-6">
                 <div>
                   <div className="flex justify-between mb-1">
                     <h4 className="font-medium">
-                      Bachelor of Analysis and Development
+                      {t("about.education.education.degree1")}
                     </h4>
-                    <span className="text-primary text-sm">2023 - 2025</span>
+                    <span className="text-primary text-sm">
+                      {t("about.education.education.period1")}
+                    </span>
                   </div>
-                  <p className="text-light-darker text-sm">GRAN Faculdade</p>
+                  <p className="text-light-darker text-sm">
+                    {t("about.education.education.school1")}
+                  </p>
                 </div>
 
                 <div>
                   <div className="flex justify-between mb-1">
                     <h4 className="font-medium">
-                      Bachelor of Business Administration
+                      {t("about.education.education.degree2")}
                     </h4>
-                    <span className="text-primary text-sm">2017 - 2020</span>
+                    <span className="text-primary text-sm">
+                      {t("about.education.education.period2")}
+                    </span>
                   </div>
-                  <p className="text-light-darker text-sm">Faculdade REGES</p>
+                  <p className="text-light-darker text-sm">
+                    {t("about.education.education.school2")}
+                  </p>
                 </div>
               </div>
             </div>
@@ -375,32 +357,52 @@ const About: React.FC = () => {
                 <div className="p-2 rounded-lg bg-dark-lightest text-secondary">
                   <Award size={20} />
                 </div>
-                <h3 className="text-xl font-bold">Certifications</h3>
+                <h3 className="text-xl font-bold">
+                  {t("about.education.certifications.title")}
+                </h3>
               </div>
 
               <div className="space-y-6">
                 <div>
                   <div className="flex justify-between mb-1">
-                    <h4 className="font-medium">NestJS Fundamentals</h4>
-                    <span className="text-secondary text-sm">2024</span>
+                    <h4 className="font-medium">
+                      {t("about.education.certifications.nestjs")}
+                    </h4>
+                    <span className="text-secondary text-sm">
+                      {t("about.education.certifications.nestjsYear")}
+                    </span>
                   </div>
-                  <p className="text-light-darker text-sm">HCode Courses</p>
+                  <p className="text-light-darker text-sm">
+                    {t("about.education.certifications.nestjsSchool")}
+                  </p>
                 </div>
 
                 <div>
                   <div className="flex justify-between mb-1">
-                    <h4 className="font-medium">Fullstack Javascript</h4>
-                    <span className="text-secondary text-sm">2023</span>
+                    <h4 className="font-medium">
+                      {t("about.education.certifications.fullstack")}
+                    </h4>
+                    <span className="text-secondary text-sm">
+                      {t("about.education.certifications.fullstackYear")}
+                    </span>
                   </div>
-                  <p className="text-light-darker text-sm">OneBitCode</p>
+                  <p className="text-light-darker text-sm">
+                    {t("about.education.certifications.fullstackSchool")}
+                  </p>
                 </div>
 
                 <div>
                   <div className="flex justify-between mb-1">
-                    <h4 className="font-medium">Discovery the Cloud AWS</h4>
-                    <span className="text-secondary text-sm">2023</span>
+                    <h4 className="font-medium">
+                      {t("about.education.certifications.aws")}
+                    </h4>
+                    <span className="text-secondary text-sm">
+                      {t("about.education.certifications.awsYear")}
+                    </span>
                   </div>
-                  <p className="text-light-darker text-sm">DIO</p>
+                  <p className="text-light-darker text-sm">
+                    {t("about.education.certifications.awsSchool")}
+                  </p>
                 </div>
               </div>
             </div>

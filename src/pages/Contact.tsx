@@ -25,7 +25,9 @@ const Contact: React.FC = () => {
     // Simulate form submission
     setTimeout(() => {
       console.log("Form values:", values);
-      message.success("Message sent successfully!");
+      message.success(
+        t("contact.form.sendSuccess") || "Message sent successfully!"
+      );
       form.resetFields();
       setLoading(false);
     }, 1500);
@@ -53,7 +55,9 @@ const Contact: React.FC = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <h2 className="text-2xl font-bold mb-6">Contact Information</h2>
+            <h2 className="text-2xl font-bold mb-6">
+              {t("contact.info.title")}
+            </h2>
 
             <div className="space-y-6 mb-8">
               <div className="flex items-start gap-4">
@@ -61,7 +65,9 @@ const Contact: React.FC = () => {
                   <Mail size={20} />
                 </div>
                 <div>
-                  <h3 className="font-medium mb-1">Email</h3>
+                  <h3 className="font-medium mb-1">
+                    {t("contact.info.email")}
+                  </h3>
                   <a
                     href="mailto:thiagocainelli@gmail.com"
                     className="text-light-darker hover:text-primary transition-colors"
@@ -76,7 +82,9 @@ const Contact: React.FC = () => {
                   <Phone size={20} />
                 </div>
                 <div>
-                  <h3 className="font-medium mb-1">Phone</h3>
+                  <h3 className="font-medium mb-1">
+                    {t("contact.info.phone")}
+                  </h3>
                   <a
                     href="tel:+1234567890"
                     className="text-light-darker hover:text-secondary transition-colors"
@@ -91,17 +99,22 @@ const Contact: React.FC = () => {
                   <MapPin size={20} />
                 </div>
                 <div>
-                  <h3 className="font-medium mb-1">Location</h3>
-                  <p className="text-light-darker">Brazil</p>
+                  <h3 className="font-medium mb-1">
+                    {t("contact.info.location")}
+                  </h3>
+                  <p className="text-light-darker">
+                    {t("contact.info.country")}
+                  </p>
                 </div>
               </div>
             </div>
 
             <div className="card">
-              <h3 className="text-xl font-bold mb-4">Let's Connect</h3>
+              <h3 className="text-xl font-bold mb-4">
+                {t("contact.connect.title")}
+              </h3>
               <p className="text-light-darker mb-6">
-                Follow me on social media or check out my work on GitHub. I'm
-                always open to new connections and opportunities.
+                {t("contact.connect.description")}
               </p>
 
               <div className="flex items-center gap-4">
@@ -162,7 +175,9 @@ const Contact: React.FC = () => {
             transition={{ duration: 0.5, delay: 0.3 }}
           >
             <div className="card">
-              <h2 className="text-2xl font-bold mb-6">Send Me a Message</h2>
+              <h2 className="text-2xl font-bold mb-6">
+                {t("contact.form.title")}
+              </h2>
 
               <Form
                 form={form}
@@ -172,51 +187,69 @@ const Contact: React.FC = () => {
               >
                 <Form.Item
                   name="name"
-                  label="Name"
+                  label={t("contact.form.name")}
                   rules={[
-                    { required: true, message: "Please enter your name" },
-                  ]}
-                >
-                  <Input className="contact-input" placeholder="Your name" />
-                </Form.Item>
-
-                <Form.Item
-                  name="email"
-                  label="Email"
-                  rules={[
-                    { required: true, message: "Please enter your email" },
-                    { type: "email", message: "Please enter a valid email" },
+                    {
+                      required: true,
+                      message: t("contact.form.validation.nameRequired"),
+                    },
                   ]}
                 >
                   <Input
                     className="contact-input"
-                    placeholder="Your email address"
+                    placeholder={t("contact.form.namePlaceholder")}
+                  />
+                </Form.Item>
+
+                <Form.Item
+                  name="email"
+                  label={t("contact.form.email")}
+                  rules={[
+                    {
+                      required: true,
+                      message: t("contact.form.validation.emailRequired"),
+                    },
+                    {
+                      type: "email",
+                      message: t("contact.form.validation.emailInvalid"),
+                    },
+                  ]}
+                >
+                  <Input
+                    className="contact-input"
+                    placeholder={t("contact.form.emailPlaceholder")}
                   />
                 </Form.Item>
 
                 <Form.Item
                   name="subject"
-                  label="Subject"
+                  label={t("contact.form.subject")}
                   rules={[
-                    { required: true, message: "Please enter a subject" },
+                    {
+                      required: true,
+                      message: t("contact.form.validation.subjectRequired"),
+                    },
                   ]}
                 >
                   <Input
                     className="contact-input"
-                    placeholder="Subject of your message"
+                    placeholder={t("contact.form.subjectPlaceholder")}
                   />
                 </Form.Item>
 
                 <Form.Item
                   name="message"
-                  label="Message"
+                  label={t("contact.form.message")}
                   rules={[
-                    { required: true, message: "Please enter your message" },
+                    {
+                      required: true,
+                      message: t("contact.form.validation.messageRequired"),
+                    },
                   ]}
                 >
                   <TextArea
                     className="contact-input"
-                    placeholder="Your message"
+                    placeholder={t("contact.form.messagePlaceholder")}
                     rows={5}
                   />
                 </Form.Item>
@@ -230,7 +263,7 @@ const Contact: React.FC = () => {
                     className="btn-primary w-full flex items-center justify-center gap-2"
                     icon={<Send size={18} />}
                   >
-                    Send Message
+                    {t("contact.form.send")}
                   </Button>
                 </Form.Item>
               </Form>
@@ -246,51 +279,43 @@ const Contact: React.FC = () => {
           className="mt-20"
         >
           <h2 className="text-2xl font-bold mb-8 text-center">
-            Frequently Asked Questions
+            {t("contact.faq.title")}
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="card">
               <h3 className="text-xl font-bold mb-3">
-                What services do you offer?
+                {t("contact.faq.questions.services.question")}
               </h3>
               <p className="text-light-darker">
-                I specialize in full-stack web development, including frontend
-                development with React.js, backend development with Node.js,
-                database design, and API development.
+                {t("contact.faq.questions.services.answer")}
               </p>
             </div>
 
             <div className="card">
               <h3 className="text-xl font-bold mb-3">
-                What is your typical project process?
+                {t("contact.faq.questions.process.question")}
               </h3>
               <p className="text-light-darker">
-                My process typically includes requirements gathering, planning,
-                design, development, testing, and deployment. I maintain clear
-                communication throughout the project lifecycle.
+                {t("contact.faq.questions.process.answer")}
               </p>
             </div>
 
-            <div className="card">
+            {/* <div className="card">
               <h3 className="text-xl font-bold mb-3">
-                Are you available for freelance work?
+                {t("contact.faq.questions.freelance.question")}
               </h3>
               <p className="text-light-darker">
-                Yes, I'm available for freelance projects. I can work on both
-                short-term and long-term engagements, depending on the project
-                requirements and timeline.
+                {t("contact.faq.questions.freelance.answer")}
               </p>
-            </div>
+            </div> */}
 
             <div className="card">
               <h3 className="text-xl font-bold mb-3">
-                How do you handle project pricing?
+                {t("contact.faq.questions.pricing.question")}
               </h3>
               <p className="text-light-darker">
-                Project pricing depends on the scope, complexity, and timeline.
-                I offer both fixed-price and hourly rate options. Contact me
-                with your project details for a custom quote.
+                {t("contact.faq.questions.pricing.answer")}
               </p>
             </div>
           </div>

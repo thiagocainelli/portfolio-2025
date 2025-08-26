@@ -255,6 +255,7 @@
       "message": "Message",
       "messagePlaceholder": "Your message",
       "send": "Send Message",
+      "sendSuccess": "Message sent successfully!",
       "validation": {
         "nameRequired": "Please enter your name",
         "emailRequired": "Please enter your email",
