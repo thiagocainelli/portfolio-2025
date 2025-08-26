@@ -1,6 +1,6 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Terminal } from 'lucide-react';
+import React from "react";
+import { motion } from "framer-motion";
+import { Terminal } from "lucide-react";
 
 interface CodeBlockProps {
   code: string;
@@ -8,7 +8,11 @@ interface CodeBlockProps {
   title?: string;
 }
 
-const CodeBlock: React.FC<CodeBlockProps> = ({ code, language = 'javascript', title = 'Code Example' }) => {
+const CodeBlock: React.FC<CodeBlockProps> = ({
+  code,
+  language = "typescript",
+  title = "Code Example",
+}) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}

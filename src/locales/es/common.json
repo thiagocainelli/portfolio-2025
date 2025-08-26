@@ -1,0 +1,296 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "home": {
+    "badge": "Desarrollador Fullstack",
+    "title": "Construyendo experiencias digitales con código y creatividad",
+    "typewriter": {
+      "react": "Desarrollador React.js",
+      "node": "Ingeniero Node.js",
+      "mobile": "Desarrollador React Native",
+      "problem": "Solucionador de Problemas",
+      "fullstack": "Desarrollador Fullstack"
+    },
+    "description": "Creo aplicaciones web robustas y escalables usando tecnologías modernas. Especializado en React.js para frontend, Node.js para desarrollo backend y React Native para desarrollo móvil.",
+    "buttons": {
+      "getInTouch": "Ponte en Contacto",
+      "viewProjects": "Ver Proyectos",
+      "downloadCV": "Descargar CV"
+    },
+    "whatIDo": {
+      "title": "Lo Que Hago",
+      "subtitle": "Me especializo en construir aplicaciones web y móviles modernas con enfoque en rendimiento, accesibilidad y experiencia del usuario."
+    },
+    "services": {
+      "frontend": {
+        "title": "Desarrollo Frontend",
+        "description": "Creando interfaces responsivas e interactivas usando React.js, TypeScript y frameworks CSS modernos (Tailwind CSS, Styled Components).",
+        "skills": [
+          "React.js",
+          "Next.js",
+          "TypeScript",
+          "Tailwind CSS",
+          "Styled Components",
+          "Jest y Cypress"
+        ]
+      },
+      "backend": {
+        "title": "Desarrollo Backend",
+        "description": "Construyendo APIs robustas y aplicaciones del lado del servidor usando Node.js, Express y varias tecnologías de base de datos.",
+        "skills": [
+          "Node.js",
+          "Nest.js",
+          "Express",
+          "PostgreSQL",
+          "MySQL",
+          "PrismaORM",
+          "TypeORM",
+          "Swagger",
+          "Postman",
+          "DBeaver",
+          "Jest"
+        ]
+      },
+      "mobile": {
+        "title": "Desarrollo Móvil",
+        "description": "Desarrollando aplicaciones móviles usando React Native, Expo y varias tecnologías móviles.",
+        "skills": ["React Native", "Expo", "TypeScript", "Tailwind CSS"]
+      },
+      "cloud": {
+        "title": "Servicios en la Nube",
+        "description": "Implementando y gestionando servicios en la nube usando AWS, Azure y Digital Ocean.",
+        "skills": ["AWS", "Azure", "Digital Ocean"]
+      }
+    },
+    "process": {
+      "title": "Mi Proceso de Desarrollo",
+      "steps": {
+        "planning": {
+          "number": "01",
+          "title": "Planificación e Investigación",
+          "description": "Entendiendo requisitos, investigando soluciones y planificando arquitectura."
+        },
+        "development": {
+          "number": "02",
+          "title": "Desarrollo",
+          "description": "Escribiendo código limpio y mantenible con enfoque en rendimiento y mejores prácticas."
+        },
+        "testing": {
+          "number": "03",
+          "title": "Pruebas e Implementación",
+          "description": "Pruebas exhaustivas, depuración e implementación."
+        }
+      }
+    }
+  },
+  "about": {
+    "title": "Acerca de Mí",
+    "subtitle": "Desarrollador fullstack apasionado con amor por crear soluciones web innovadoras y aplicaciones móviles.",
+    "journey": {
+      "title": "Mi Trayectoria",
+      "description1": "Desarrollador Full Stack con historial comprobado en la entrega de aplicaciones web escalables y de alta calidad usando el ecosistema JavaScript/TypeScript. Experimentado tanto en frontend (React, Next.js, Tailwind), backend (Node.js, NestJS, PostgreSQL) como móvil (React Native, Expo), habiendo contribuido a más de 15 proyectos reales en varias industrias.",
+      "description2": "Hábil en construir UIs responsivas, APIs robustas e integraciones eficientes — siempre guiado por principios de código limpio, pruebas (Jest, Cypress) y entrega ágil. Mentalidad preparada para la nube con experiencia en implementar y mantener aplicaciones en AWS, Azure y DigitalOcean.",
+      "description3": "Integré capacidades de IA generativa a través de la API OpenAI para mejorar características de la plataforma y optimizar flujos de trabajo de desarrollo."
+    },
+    "stats": {
+      "experience": "Experiencia",
+      "years": "3+ Años",
+      "projects": "Proyectos",
+      "completed": "15+ Completados",
+      "certifications": "Certificaciones",
+      "earned": "5+ Obtenidas",
+      "education": "Educación",
+      "degree": "Grado en Análisis y Desarrollo de Sistemas"
+    },
+    "experience": {
+      "title": "Experiencia Profesional",
+      "current": "Actual",
+      "jobs": {
+        "pl": {
+          "title": "Desarrollador Fullstack PL",
+          "company": "Fairy Solutions - Tecnología e Innovación",
+          "period": "Ene 2025 - Presente",
+          "responsibilities": [
+            "Desarrollando y manteniendo aplicaciones web usando ReactJS, NestJS y TypeScript, contribuyendo tanto para frontend como backend.",
+            "Responsable de construir e implementar soluciones escalables en entornos de nube (AWS, DigitalOcean, Azure).",
+            "Integré la API OpenAI en características de la plataforma, habilitando interacciones inteligentes y capacidades de automatización.",
+            "Colaborando en sprints ágiles con equipos multifuncionales, asegurando entrega puntual de características de alta calidad.",
+            "Mejorando rendimiento y mantenibilidad de la aplicación a través de refactorización continua, documentación y prácticas de prueba."
+          ],
+          "skills": [
+            "React.js",
+            "Next.js",
+            "TypeScript",
+            "TailwindCSS",
+            "Node.js",
+            "NestJS",
+            "PostgreSQL",
+            "AWS",
+            "DigitalOcean",
+            "Azure",
+            "API OpenAI",
+            "Jest",
+            "Cypress",
+            "Ágil",
+            "Código Limpio"
+          ]
+        },
+        "lead": {
+          "title": "Desarrollador Fullstack y Líder de Desarrollo de Software",
+          "company": "Fairy Solutions - Tecnología e Innovación",
+          "period": "Ene 2025 - Jun 2025",
+          "responsibilities": [
+            "Combiné deberes de desarrollo de software con el liderazgo técnico de un equipo de ingeniería de 4 personas, gestionando sprints, prioridades y entregas exitosas de proyectos.",
+            "Contribuí ampliamente para desarrollo front-end y back-end usando ReactJS, NestJS, TypeScript y PostgreSQL, manejando una amplia gama de características, refactorizaciones e integraciones.",
+            "Colaboré de cerca con stakeholders para alinear ejecución técnica con objetivos de negocio, usando metodologías ágiles y herramientas como Git y ClickUp."
+          ],
+          "skills": [
+            "React.js",
+            "TypeScript",
+            "TailwindCSS",
+            "Node.js",
+            "NestJS",
+            "PostgreSQL",
+            "Ágil",
+            "Código Limpio",
+            "Liderazgo",
+            "Desarrollo de API",
+            "Arquitectura de Software",
+            "Git",
+            "ClickUp"
+          ]
+        },
+        "fullstack": {
+          "title": "Desarrollador Full Stack",
+          "company": "Fairy Solutions - Tecnología e Innovación",
+          "period": "Feb 2024 - Feb 2025",
+          "responsibilities": [
+            "Desarrollé y mantuve aplicaciones full-stack escalables usando ReactJS, NestJS, TypeScript y PostgreSQL.",
+            "Lideé integraciones con APIs de terceros, aumentando confiabilidad y consistencia de los datos en 30%.",
+            "Refactoricé y optimicé bases de código legadas, mejorando rendimiento de la aplicación y reduciendo deuda técnica en 45%.",
+            "Participé activamente en sprints ágiles y colaboración en equipo usando Git y ClickUp."
+          ],
+          "skills": [
+            "Next.js",
+            "React.js",
+            "Node.js",
+            "TypeScript",
+            "NestJS",
+            "PostgreSQL"
+          ]
+        },
+        "freelancer": {
+          "title": "Desarrollador Frontend (Freelancer)",
+          "company": "Freelancer",
+          "period": "Jun 2023 - Dic 2023",
+          "responsibilities": [
+            "Desarrollé interfaces modernas y de alto rendimiento para landing pages, sitios web y sistemas web, enfocándome en responsividad y experiencia del usuario.",
+            "Trabajé en toda la stack usando ReactJS (frontend) y Node.js (backend), incluyendo integraciones de API, gestión de estado y optimización de rendimiento.",
+            "Gestioné todo el ciclo de vida del desarrollo — desde arquitectura e implementación hasta pruebas y entrega."
+          ],
+          "skills": [
+            "React.js",
+            "Node.js",
+            "Express",
+            "PostgreSQL",
+            "TypeScript",
+            "TailwindCSS",
+            "Git"
+          ]
+        }
+      }
+    },
+    "education": {
+      "title": "Educación y Certificaciones",
+      "education": {
+        "title": "Educación",
+        "degree1": "Grado en Análisis y Desarrollo de Sistemas",
+        "period1": "2023 - 2025",
+        "school1": "GRAN Faculdade",
+        "degree2": "Grado en Administración de Empresas",
+        "period2": "2017 - 2020",
+        "school2": "Faculdade REGES"
+      },
+      "certifications": {
+        "title": "Certificaciones",
+        "nestjs": "Fundamentos NestJS",
+        "nestjsYear": "2024",
+        "nestjsSchool": "HCode Courses",
+        "fullstack": "Javascript Fullstack",
+        "fullstackYear": "2023",
+        "fullstackSchool": "OneBitCode",
+        "aws": "Descubrimiento de la Nube AWS",
+        "awsYear": "2023",
+        "awsSchool": "DIO"
+      }
+    }
+  },
+  "contact": {
+    "title": "Ponte en Contacto",
+    "subtitle": "¿Tienes un proyecto en mente o quieres discutir oportunidades? ¡Me encantaría saber de ti!",
+    "info": {
+      "title": "Información de Contacto",
+      "email": "Email",
+      "phone": "Teléfono",
+      "location": "Ubicación",
+      "country": "Brasil"
+    },
+    "connect": {
+      "title": "Conectemos",
+      "description": "Sígueme en redes sociales o revisa mi trabajo en GitHub. Siempre estoy abierto a nuevas conexiones y oportunidades."
+    },
+    "form": {
+      "title": "Envíame un Mensaje",
+      "name": "Nombre",
+      "namePlaceholder": "Tu nombre",
+      "email": "Email",
+      "emailPlaceholder": "Tu dirección de email",
+      "subject": "Asunto",
+      "subjectPlaceholder": "Asunto de tu mensaje",
+      "message": "Mensaje",
+      "messagePlaceholder": "Tu mensaje",
+      "send": "Enviar Mensaje",
+      "validation": {
+        "nameRequired": "Por favor, ingresa tu nombre",
+        "emailRequired": "Por favor, ingresa tu email",
+        "emailInvalid": "Por favor, ingresa un email válido",
+        "subjectRequired": "Por favor, ingresa un asunto",
+        "messageRequired": "Por favor, ingresa tu mensaje"
+      }
+    },
+    "faq": {
+      "title": "Preguntas Frecuentes",
+      "questions": {
+        "services": {
+          "question": "¿Qué servicios ofreces?",
+          "answer": "Me especializo en desarrollo web full-stack, incluyendo desarrollo frontend con React.js, desarrollo backend con Node.js, diseño de base de datos y desarrollo de API."
+        },
+        "process": {
+          "question": "¿Cuál es tu proceso típico de proyecto?",
+          "answer": "Mi proceso incluye recolección de requisitos, planificación, diseño, desarrollo, pruebas e implementación. Mantengo comunicación clara durante todo el ciclo de vida del proyecto."
+        },
+        "freelance": {
+          "question": "¿Estás disponible para trabajo freelance?",
+          "answer": "Sí, estoy disponible para proyectos freelance. Puedo trabajar tanto en compromisos de corto como de largo plazo, dependiendo de los requisitos y cronograma del proyecto."
+        },
+        "pricing": {
+          "question": "¿Cómo manejas los precios de proyecto?",
+          "answer": "El precio del proyecto depende del alcance, complejidad y cronograma. Ofrezco tanto opciones de precio fijo como de tarifa horaria. Ponte en contacto con los detalles de tu proyecto para una cotización personalizada."
+        }
+      }
+    }
+  },
+  "footer": {
+    "copyright": "Todos los derechos reservados."
+  },
+  "languages": {
+    "en": "English",
+    "pt": "Português",
+    "es": "Español"
+  }
+}
