@@ -83,6 +83,9 @@ const About: React.FC = () => {
                 <p className="text-light-darker">
                   {t("about.journey.description3")}
                 </p>
+                <p className="text-light-darker">
+                  {t("about.journey.description4")}
+                </p>
               </div>
 
               <div className="grid grid-cols-2 gap-4">
@@ -110,7 +113,7 @@ const About: React.FC = () => {
                   </div>
                 </div>
 
-                <div className="flex items-center gap-3">
+                {/* <div className="flex items-center gap-3">
                   <div className="p-2 rounded-lg bg-dark-lightest text-accent">
                     <Award size={20} />
                   </div>
@@ -132,7 +135,7 @@ const About: React.FC = () => {
                     </p>
                     <p className="font-medium">{t("about.stats.degree")}</p>
                   </div>
-                </div>
+                </div> */}
               </div>
             </motion.div>
           </div>

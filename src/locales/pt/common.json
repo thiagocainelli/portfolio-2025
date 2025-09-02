@@ -12,11 +12,13 @@
     "typewriter": {
       "react": "Desenvolvedor React.js",
       "node": "Engenheiro Node.js",
+      "python": "Engenheiro Python",
+      "ia": "Engenheiro IA",
       "mobile": "Desenvolvedor React Native",
       "problem": "Solucionador de Problemas",
       "fullstack": "Desenvolvedor Fullstack"
     },
-    "description": "Crio aplicações web robustas e escaláveis usando tecnologias modernas. Especializado em React.js para frontend, Node.js para desenvolvimento backend e React Native para desenvolvimento mobile.",
+    "description": "Crio aplicações web robustas e escaláveis usando tecnologias modernas. Especializado em React.js para frontend, Node.js e Python para desenvolvimento backend e React Native para desenvolvimento mobile.",
     "buttons": {
       "getInTouch": "Entre em Contato",
       "viewProjects": "Ver Projetos",
@@ -41,9 +43,11 @@
       },
       "backend": {
         "title": "Desenvolvimento Backend",
-        "description": "Construindo APIs robustas e aplicações server-side usando Node.js, Express e várias tecnologias de banco de dados.",
+        "description": "Construindo APIs robustas e aplicações server-side usando Node.js, Python, FastAPI, NestJS, Express e várias tecnologias de banco de dados.",
         "skills": [
           "Node.js",
+          "Python",
+          "FastAPI",
           "Nest.js",
           "Express",
           "PostgreSQL",
@@ -93,15 +97,16 @@
     "subtitle": "Desenvolvedor fullstack apaixonado com amor por criar soluções web inovadoras e aplicações mobile.",
     "journey": {
       "title": "Minha Jornada",
-      "description1": "Desenvolvedor Full Stack com histórico comprovado na entrega de aplicações web escaláveis e de alta qualidade usando o ecossistema JavaScript/TypeScript. Experiente tanto em frontend (React, Next.js, Tailwind), backend (Node.js, NestJS, PostgreSQL) quanto mobile (React Native, Expo), tendo contribuído para mais de 15 projetos reais em várias indústrias.",
+      "description1": "Desenvolvedor Full Stack com histórico comprovado na entrega de aplicações web escaláveis e de alta qualidade usando TypeScript e Python. Experiente tanto em frontend (React, Next.js, Tailwind), backend (Node.js, Python, NestJS, FastAPI, PostgreSQL) quanto mobile (React Native, Expo), tendo contribuído para mais de 15 projetos reais em várias indústrias.",
       "description2": "Habilidoso em construir UIs responsivas, APIs robustas e integrações eficientes — sempre guiado por princípios de código limpo, testes (Jest, Cypress) e entrega ágil. Mentalidade preparada para nuvem com experiência em implantar e manter aplicações na AWS, Azure e DigitalOcean.",
-      "description3": "Integrei capacidades de IA generativa através da API OpenAI para aprimorar recursos da plataforma e otimizar fluxos de trabalho de desenvolvimento."
+      "description3": "Integrei capacidades de IA generativa através da API OpenAI para aprimorar recursos da plataforma e otimizar fluxos de trabalho de desenvolvimento.",
+      "description4": "Desenvolvimento de soluções com uso de IA generativa, como: agentes, chatbots, RAG, extração de dados e tratamento de dados, dentre outras soluções, usando Python com LangChain, LangGraph, LLMs, OpenAI API."
     },
     "stats": {
       "experience": "Experiência",
       "years": "3+ Anos",
       "projects": "Projetos",
-      "completed": "15+ Concluídos",
+      "completed": "20+ Concluídos",
       "certifications": "Certificações",
       "earned": "5+ Obtidas",
       "education": "Educação",
@@ -114,7 +119,7 @@
         "pl": {
           "title": "Desenvolvedor Fullstack PL",
           "company": "Fairy Solutions - Tecnologia e Inovação",
-          "period": "Jan 2025 - Presente",
+          "period": "Jun 2025 - Presente",
           "responsibilities": [
             "Desenvolvendo e mantendo aplicações web usando ReactJS, NestJS e TypeScript, contribuindo tanto para frontend quanto backend.",
             "Responsável por construir e implantar soluções escaláveis em ambientes de nuvem (AWS, DigitalOcean, Azure).",
@@ -129,6 +134,9 @@
             "TailwindCSS",
             "Node.js",
             "NestJS",
+            "Express",
+            "Python",
+            "FastAPI",
             "PostgreSQL",
             "AWS",
             "DigitalOcean",

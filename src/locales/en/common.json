@@ -12,11 +12,13 @@
     "typewriter": {
       "react": "React.js Developer",
       "node": "Node.js Engineer",
+      "python": "Python Engineer",
+      "ia": "IA Engineer",
       "mobile": "React Native Developer",
       "problem": "Problem Solver",
       "fullstack": "Fullstack Developer"
     },
-    "description": "I craft robust and scalable web applications using modern technologies. Specializing in React.js for frontend, Node.js for backend development and React Native for mobile development.",
+    "description": "I craft robust and scalable web applications using modern technologies. Specializing in React.js for frontend, Node.js and Python for backend development and React Native for mobile development.",
     "buttons": {
       "getInTouch": "Get in Touch",
       "viewProjects": "View Projects",
@@ -45,6 +47,8 @@
         "skills": [
           "Node.js",
           "Nest.js",
+          "Python",
+          "FastAPI",
           "Express",
           "PostgreSQL",
           "MySQL",
@@ -93,15 +97,16 @@
     "subtitle": "Passionate fullstack developer with a love for creating innovative web solutions and mobile applications.",
     "journey": {
       "title": "My Journey",
-      "description1": "Full Stack Developer with a strong track record delivering scalable, high-quality web applications using the JavaScript/TypeScript ecosystem. Experienced in both frontend (React, Next.js, Tailwind),backend (Node.js, NestJS, PostgreSQL) and mobile (React Native, Expo) having contributed to over 15 real-world projects across various industries.",
+      "description1": "Full Stack Developer with a strong track record delivering scalable, high-quality web applications using TypeScript and Python. Experienced in both frontend (React, Next.js, Tailwind),backend (Node.js, Python, NestJS, Express, FastAPI, PostgreSQL) and mobile (React Native, Expo) having contributed to over 15 real-world projects across various industries.",
       "description2": "Skilled in building responsive UIs, robust APIs, and efficient integrations — always guided by clean code principles, testing (Jest, Cypress), and agile delivery. Cloud-ready mindset with experience deploying and maintaining applications in AWS, Azure, and DigitalOcean.",
-      "description3": "Integrated generative AI capabilities through the OpenAI API to enhance application features and streamline development workflows."
+      "description3": "Integrated generative AI capabilities through the OpenAI API to enhance application features and streamline development workflows.",
+      "description4": "Development of solutions using generative AI, such as: agents, chatbots, RAG, data extraction and data treatment, among other solutions, using Python with LangChain, LangGraph, LLMs, OpenAI API."
     },
     "stats": {
       "experience": "Experience",
       "years": "3+ Years",
       "projects": "Projects",
-      "completed": "15+ Completed",
+      "completed": "20+ Completed",
       "certifications": "Certifications",
       "earned": "5+ Earned",
       "education": "Education",
@@ -114,7 +119,7 @@
         "pl": {
           "title": "Fullstack Developer PL",
           "company": "Fairy Solutions - Tecnologia e Inovação",
-          "period": "Jan 2025 - Present",
+          "period": "June 2025 - Present",
           "responsibilities": [
             "Developing and maintaining web applications using ReactJS, NestJS, and TypeScript, contributing across both frontend and backend.",
             "Responsible for building and deploying scalable solutions in cloud environments (AWS, DigitalOcean, Azure).",
@@ -129,6 +134,9 @@
             "TailwindCSS",
             "Node.js",
             "NestJS",
+            "Express",
+            "Python",
+            "FastAPI",
             "PostgreSQL",
             "AWS",
             "DigitalOcean",

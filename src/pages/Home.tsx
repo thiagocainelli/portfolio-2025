@@ -25,12 +25,13 @@ import { Developer } from '@fullstack/developer';
 
 const skills = {
   frontend: ['React.js', 'Next.js', 'TypeScript', 'Tailwind CSS',],
-  backend: ['Node.js', 'Nest.js', 'Express'],
+  backend: ['Node.js', 'Python', 'Nest.js', 'Express'],
   database: ['PostgreSQL', 'MySQL', 'PrismaORM', 'TypeORM'],
   mobile: ['React Native', 'Expo'],
   testing: ['Jest', 'Cypress'],
   tools: ['Git', 'GitHub', 'Swagger', 'Docker', 'DBeaver', 'Postman'],
   cloud: ['AWS', 'Azure', 'Digital Ocean'],
+  ia: ['LLMs', 'RAG', 'AI Agents', 'LangChain', 'LangGraph', 'LangSmith'],
 };
 
 const developer = new Developer({
