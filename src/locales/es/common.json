@@ -7,26 +7,26 @@
     "contact": "Contacto"
   },
   "home": {
-    "badge": "Desarrollador Fullstack",
-    "title": "Construyendo experiencias digitales con código y creatividad",
+    "badge": "Ingeniero de Software",
+    "title": "Construyendo soluciones digitales robustas y escalables",
     "typewriter": {
-      "react": "Desarrollador React.js",
+      "react": "Ingeniero React.js",
       "node": "Ingeniero Node.js",
       "python": "Ingeniero Python",
-      "ia": "Ingeniero IA",
-      "mobile": "Desarrollador React Native",
+      "ia": "Ingeniero de IA",
+      "mobile": "Ingeniero React Native",
       "problem": "Solucionador de Problemas",
-      "fullstack": "Desarrollador Fullstack"
+      "fullstack": "Ingeniero de Software Fullstack"
     },
-    "description": "Creo aplicaciones web robustas y escalables usando tecnologías modernas. Especializado en React.js para frontend, Node.js y Python para desarrollo backend y React Native para desarrollo móvil.",
+    "description": "Especializado en arquitectura y desarrollo de sistemas de software de alta calidad. Experiencia en tecnologías modernas para frontend, backend, móvil y soluciones de Inteligencia Artificial Generativa.",
     "buttons": {
       "getInTouch": "Ponte en Contacto",
       "viewProjects": "Ver Proyectos",
       "downloadCV": "Descargar CV"
     },
     "whatIDo": {
-      "title": "Lo Que Hago",
-      "subtitle": "Me especializo en construir aplicaciones web y móviles modernas con enfoque en rendimiento, accesibilidad y experiencia del usuario."
+      "title": "Servicios",
+      "subtitle": "Especializado en arquitectura y desarrollo de sistemas de software de alta calidad, con enfoque en rendimiento, escalabilidad y mejores prácticas de ingeniería de software."
     },
     "services": {
       "frontend": {
@@ -69,149 +69,120 @@
         "title": "Servicios en la Nube",
         "description": "Implementando y gestionando servicios en la nube usando AWS, Azure y Digital Ocean.",
         "skills": ["AWS", "Azure", "Digital Ocean"]
+      },
+      "ai": {
+        "title": "Inteligencia Artificial Generativa",
+        "description": "Desarrollo de aplicaciones con IA generativa, incluyendo agentes inteligentes, chatbots, sistemas RAG, extracción y procesamiento de datos usando LLMs y frameworks modernos.",
+        "skills": [
+          "LLMs",
+          "RAG",
+          "Agentes de IA",
+          "LangChain",
+          "LangGraph",
+          "LangSmith",
+          "OpenAI API",
+          "Python",
+          "Procesamiento de Lenguaje Natural"
+        ]
+      }
+    },
+    "howIWork": {
+      "title": "Cómo Trabajo",
+      "subtitle": "Principios que guían mi enfoque profesional y garantizan resultados de excelencia",
+      "communication": {
+        "title": "Comunicación Clara",
+        "description": "Manteniéndote informado en cada etapa del proyecto con actualizaciones regulares y total transparencia."
+      },
+      "collaboration": {
+        "title": "Colaboración Efectiva",
+        "description": "Trabajando junto con tu equipo para entender necesidades y alinear expectativas."
+      },
+      "efficiency": {
+        "title": "Eficiencia y Agilidad",
+        "description": "Entregas rápidas sin comprometer calidad, utilizando metodologías ágiles y herramientas modernas."
+      },
+      "quality": {
+        "title": "Enfoque en Calidad",
+        "description": "Código limpio, arquitectura sólida y soluciones escalables que resisten la prueba del tiempo."
+      }
+    },
+    "metrics": {
+      "title": "Resultados e Impacto",
+      "subtitle": "Métricas que demuestran compromiso con la excelencia y entrega de valor",
+      "projects": {
+        "label": "Proyectos Entregados"
+      },
+      "experience": {
+        "label": "Actuando Desde"
+      },
+      "satisfaction": {
+        "label": "Satisfacción del Cliente"
+      },
+      "delivery": {
+        "label": "Tasa de Entrega a Tiempo"
       }
     },
     "process": {
-      "title": "Mi Proceso de Desarrollo",
+      "title": "Metodología de Trabajo",
+      "subtitle": "Proceso estructurado y disciplinado para garantizar excelencia en cada proyecto",
       "steps": {
-        "planning": {
+        "discovery": {
           "number": "01",
-          "title": "Planificación e Investigación",
-          "description": "Entendiendo requisitos, investigando soluciones y planificando arquitectura."
+          "title": "Descubrimiento y Análisis",
+          "description": "Reuniones iniciales para comprender profundamente el problema, objetivos de negocio, restricciones técnicas y expectativas. Análisis de stakeholders y definición de alcance."
+        },
+        "planning": {
+          "number": "02",
+          "title": "Arquitectura y Planificación",
+          "description": "Definición de arquitectura de software escalable, elección de tecnologías adecuadas, planificación de sprints, definición de estándares de código y estructuración del proyecto."
         },
         "development": {
-          "number": "02",
-          "title": "Desarrollo",
-          "description": "Escribiendo código limpio y mantenible con enfoque en rendimiento y mejores prácticas."
+          "number": "03",
+          "title": "Ingeniería de Software",
+          "description": "Desarrollo siguiendo principios SOLID, Clean Code, TDD cuando sea aplicable, revisiones de código sistemáticas e implementación de funcionalidades con enfoque en mantenibilidad."
         },
         "testing": {
-          "number": "03",
-          "title": "Pruebas e Implementación",
-          "description": "Pruebas exhaustivas, depuración e implementación."
+          "number": "04",
+          "title": "Pruebas y Calidad",
+          "description": "Pruebas unitarias, de integración y end-to-end. Análisis de rendimiento, seguridad y accesibilidad. Validación con stakeholders y ajustes finales."
+        },
+        "deployment": {
+          "number": "05",
+          "title": "Implementación y Monitoreo",
+          "description": "Despliegue en entornos de producción con estrategias de CI/CD, configuración de monitoreo y alertas, documentación técnica completa y capacitación del equipo."
+        },
+        "maintenance": {
+          "number": "06",
+          "title": "Soporte y Evolución",
+          "description": "Mantenimiento continuo, optimizaciones basadas en métricas, evolución incremental del sistema y soporte técnico para garantizar estabilidad y crecimiento."
         }
       }
+    },
+    "cta": {
+      "title": "¿Listo para Transformar Tu Idea en Realidad?",
+      "description": "Hablemos sobre cómo puedo ayudar a construir soluciones de software que impulsen tu negocio. Ponte en contacto y discutamos tu próximo proyecto.",
+      "button": "Iniciar Conversación"
     }
   },
   "about": {
     "title": "Acerca de Mí",
-    "subtitle": "Desarrollador fullstack apasionado con amor por crear soluciones web innovadoras y aplicaciones móviles.",
+    "subtitle": "Ingeniero de Software especializado en arquitectura y desarrollo de sistemas de alta calidad.",
     "journey": {
-      "title": "Mi Trayectoria",
-      "description1": "Desarrollador Full Stack con historial comprobado en la entrega de aplicaciones web escalables y de alta calidad usando TypeScript y Python. Experimentado tanto en frontend (React, Next.js, Tailwind), backend (Node.js, Python, NestJS, FastAPI, PostgreSQL) como móvil (React Native, Expo), habiendo contribuido a más de 15 proyectos reales en varias industrias.",
-      "description2": "Hábil en construir UIs responsivas, APIs robustas e integraciones eficientes — siempre guiado por principios de código limpio, pruebas (Jest, Cypress) y entrega ágil. Mentalidad preparada para la nube con experiencia en implementar y mantener aplicaciones en AWS, Azure y DigitalOcean.",
-      "description3": "Integré capacidades de IA generativa a través de la API OpenAI para mejorar características de la plataforma y optimizar flujos de trabajo de desarrollo.",
-      "description4": "Desarrollo de soluciones con uso de IA generativa, como: agentes, chatbots, RAG, extração de dados y tratamiento de datos, entre otras soluciones, usando Python con LangChain, LangGraph, LLMs, OpenAI API."
+      "title": "Perfil Profesional",
+      "description1": "Ingeniero de Software con experiencia en arquitectura y desarrollo de sistemas escalables y de alta calidad. Especializado en tecnologías modernas para frontend (React, Next.js, TypeScript), backend (Node.js, Python, NestJS, FastAPI) y móvil (React Native, Expo).",
+      "description2": "Experiencia sólida en construcción de arquitecturas de software robustas, APIs escalables e integraciones eficientes, siempre siguiendo principios de Clean Code, SOLID y mejores prácticas de ingeniería de software. Experiencia en implementación y mantenimiento de aplicaciones en entornos cloud (AWS, Azure, DigitalOcean).",
+      "description3": "Especialización en desarrollo de soluciones con Inteligencia Artificial Generativa, incluyendo creación de agentes inteligentes, sistemas RAG (Retrieval-Augmented Generation), chatbots avanzados y procesamiento de datos con LLMs.",
+      "description4": "Dominio de frameworks y herramientas modernas de IA: LangChain, LangGraph, LangSmith, OpenAI API y procesamiento de lenguaje natural con Python."
     },
     "stats": {
       "experience": "Experiencia",
-      "years": "3+ Años",
+      "years": "Desde 2023",
       "projects": "Proyectos",
       "completed": "20+ Completados",
       "certifications": "Certificaciones",
       "earned": "5+ Obtenidas",
       "education": "Educación",
       "degree": "Grado en Análisis y Desarrollo de Sistemas"
-    },
-    "experience": {
-      "title": "Experiencia Profesional",
-      "current": "Actual",
-      "jobs": {
-        "pl": {
-          "title": "Desarrollador Fullstack PL",
-          "company": "Fairy Solutions - Tecnología e Innovación",
-          "period": "Jun 2025 - Presente",
-          "responsibilities": [
-            "Desarrollando y manteniendo aplicaciones web usando ReactJS, NestJS y TypeScript, contribuyendo tanto para frontend como backend.",
-            "Responsable de construir e implementar soluciones escalables en entornos de nube (AWS, DigitalOcean, Azure).",
-            "Integré la API OpenAI en características de la plataforma, habilitando interacciones inteligentes y capacidades de automatización.",
-            "Colaborando en sprints ágiles con equipos multifuncionales, asegurando entrega puntual de características de alta calidad.",
-            "Mejorando rendimiento y mantenibilidad de la aplicación a través de refactorización continua, documentación y prácticas de prueba."
-          ],
-          "skills": [
-            "React.js",
-            "Next.js",
-            "TypeScript",
-            "TailwindCSS",
-            "Python",
-            "FastAPI",
-            "Express",
-            "Node.js",
-            "NestJS",
-            "PostgreSQL",
-            "AWS",
-            "DigitalOcean",
-            "Azure",
-            "API OpenAI",
-            "Jest",
-            "Cypress",
-            "Ágil",
-            "Código Limpio"
-          ]
-        },
-        "lead": {
-          "title": "Desarrollador Fullstack y Líder de Desarrollo de Software",
-          "company": "Fairy Solutions - Tecnología e Innovación",
-          "period": "Ene 2025 - Jun 2025",
-          "responsibilities": [
-            "Combiné deberes de desarrollo de software con el liderazgo técnico de un equipo de ingeniería de 4 personas, gestionando sprints, prioridades y entregas exitosas de proyectos.",
-            "Contribuí ampliamente para desarrollo front-end y back-end usando ReactJS, NestJS, TypeScript y PostgreSQL, manejando una amplia gama de características, refactorizaciones e integraciones.",
-            "Colaboré de cerca con stakeholders para alinear ejecución técnica con objetivos de negocio, usando metodologías ágiles y herramientas como Git y ClickUp."
-          ],
-          "skills": [
-            "React.js",
-            "TypeScript",
-            "TailwindCSS",
-            "Node.js",
-            "NestJS",
-            "PostgreSQL",
-            "Ágil",
-            "Código Limpio",
-            "Liderazgo",
-            "Desarrollo de API",
-            "Arquitectura de Software",
-            "Git",
-            "ClickUp"
-          ]
-        },
-        "fullstack": {
-          "title": "Desarrollador Full Stack",
-          "company": "Fairy Solutions - Tecnología e Innovación",
-          "period": "Feb 2024 - Feb 2025",
-          "responsibilities": [
-            "Desarrollé y mantuve aplicaciones full-stack escalables usando ReactJS, NestJS, TypeScript y PostgreSQL.",
-            "Lideé integraciones con APIs de terceros, aumentando confiabilidad y consistencia de los datos en 30%.",
-            "Refactoricé y optimicé bases de código legadas, mejorando rendimiento de la aplicación y reduciendo deuda técnica en 45%.",
-            "Participé activamente en sprints ágiles y colaboración en equipo usando Git y ClickUp."
-          ],
-          "skills": [
-            "Next.js",
-            "React.js",
-            "Node.js",
-            "TypeScript",
-            "NestJS",
-            "PostgreSQL"
-          ]
-        },
-        "freelancer": {
-          "title": "Desarrollador Frontend (Freelancer)",
-          "company": "Freelancer",
-          "period": "Jun 2023 - Dic 2023",
-          "responsibilities": [
-            "Desarrollé interfaces modernas y de alto rendimiento para landing pages, sitios web y sistemas web, enfocándome en responsividad y experiencia del usuario.",
-            "Trabajé en toda la stack usando ReactJS (frontend) y Node.js (backend), incluyendo integraciones de API, gestión de estado y optimización de rendimiento.",
-            "Gestioné todo el ciclo de vida del desarrollo — desde arquitectura e implementación hasta pruebas y entrega."
-          ],
-          "skills": [
-            "React.js",
-            "Node.js",
-            "Express",
-            "PostgreSQL",
-            "TypeScript",
-            "TailwindCSS",
-            "Git"
-          ]
-        }
-      }
     },
     "education": {
       "title": "Educación y Certificaciones",
@@ -277,7 +248,7 @@
       "questions": {
         "services": {
           "question": "¿Qué servicios ofreces?",
-          "answer": "Me especializo en desarrollo web full-stack, incluyendo desarrollo frontend con React.js, desarrollo backend con Node.js, diseño de base de datos y desarrollo de API."
+          "answer": "Me especializo en ingeniería de software, incluyendo desarrollo frontend (React.js, Next.js, TypeScript), backend (Node.js, Python, NestJS, FastAPI), desarrollo móvil (React Native), servicios en la nube (AWS, Azure, Digital Ocean) y soluciones de Inteligencia Artificial Generativa (LLMs, RAG, Agentes de IA, LangChain)."
         },
         "process": {
           "question": "¿Cuál es tu proceso típico de proyecto?",

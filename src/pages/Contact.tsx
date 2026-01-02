@@ -73,7 +73,7 @@ const Contact: React.FC = () => {
       <SEO
         title="Contact"
         description="Get in touch with Thiago Cainelli for collaboration opportunities, project inquiries, or just to say hello. Available for full-time positions."
-        keywords="Contact, Get in Touch, Collaboration, Fullstack Developer, Thiago Cainelli, Hire Developer"
+        keywords="Contact, Get in Touch, Collaboration, Software Engineer, Thiago Cainelli, Hire Software Engineer"
         type="website"
         canonical="https://thiagocainelli.com.br"
       />
@@ -85,10 +85,12 @@ const Contact: React.FC = () => {
             transition={{ duration: 0.5 }}
             className="text-center mb-16"
           >
-            <h1 className="text-4xl font-bold mb-4">{t("contact.title")}</h1>
+            <h1 className="text-4xl font-semibold mb-4">
+              {t("contact.title")}
+            </h1>
             <AnimatedText
               text={t("contact.subtitle")}
-              className="text-xl text-light-darker max-w-3xl mx-auto"
+              className="text-lg text-light-darker max-w-3xl mx-auto leading-relaxed"
             />
           </motion.div>
 
@@ -98,13 +100,13 @@ const Contact: React.FC = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              <h2 className="text-2xl font-bold mb-6">
+              <h2 className="text-2xl font-semibold mb-6">
                 {t("contact.info.title")}
               </h2>
 
               <div className="space-y-6 mb-8">
                 <div className="flex items-start gap-4">
-                  <div className="p-3 rounded-lg bg-primary/10 text-primary mt-1">
+                  <div className="p-3 rounded-md bg-primary/5 border border-primary/10 text-primary mt-1">
                     <Mail size={20} />
                   </div>
                   <div>
@@ -121,7 +123,7 @@ const Contact: React.FC = () => {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="p-3 rounded-lg bg-secondary/10 text-secondary mt-1">
+                  <div className="p-3 rounded-md bg-secondary/5 border border-secondary/10 text-secondary mt-1">
                     <Phone size={20} />
                   </div>
                   <div>
@@ -138,7 +140,7 @@ const Contact: React.FC = () => {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="p-3 rounded-lg bg-accent/10 text-accent mt-1">
+                  <div className="p-3 rounded-md bg-accent/5 border border-accent/10 text-accent mt-1">
                     <MapPin size={20} />
                   </div>
                   <div>
@@ -153,10 +155,10 @@ const Contact: React.FC = () => {
               </div>
 
               <div className="card">
-                <h3 className="text-xl font-bold mb-4">
+                <h3 className="text-xl font-semibold mb-4">
                   {t("contact.connect.title")}
                 </h3>
-                <p className="text-light-darker mb-6">
+                <p className="text-light-darker mb-6 leading-relaxed">
                   {t("contact.connect.description")}
                 </p>
 
@@ -218,30 +220,9 @@ const Contact: React.FC = () => {
               transition={{ duration: 0.5, delay: 0.3 }}
             >
               <div className="card">
-                <h2 className="text-2xl font-bold mb-6">
+                <h2 className="text-2xl font-semibold mb-6">
                   {t("contact.form.title")}
                 </h2>
-
-                {/* EmailJS Configuration Status */}
-                {!isConfigured && (
-                  <div className="mb-4 p-4 bg-yellow-500/10 border border-yellow-500/20 rounded-lg">
-                    <div className="flex items-center gap-2 mb-2">
-                      <AlertCircle size={16} className="text-yellow-500" />
-                      <span className="text-yellow-500 font-medium">
-                        Configuração EmailJS
-                      </span>
-                    </div>
-                    <p className="text-yellow-500 text-sm">
-                      Para que o formulário funcione, configure as seguintes
-                      variáveis de ambiente:
-                    </p>
-                    <div className="mt-2 text-xs text-yellow-500/80 font-mono">
-                      <div>VITE_APP_EMAILJS_SERVICE_ID=seu_service_id</div>
-                      <div>VITE_APP_EMAILJS_TEMPLATE_ID=seu_template_id</div>
-                      <div>VITE_APP_EMAILJS_PUBLIC_KEY=sua_public_key</div>
-                    </div>
-                  </div>
-                )}
 
                 {/* Success Message */}
                 {success && (
@@ -368,35 +349,49 @@ const Contact: React.FC = () => {
             viewport={{ once: true }}
             className="mt-20"
           >
-            <h2 className="text-2xl font-bold mb-8 text-center">
-              {t("contact.faq.title")}
-            </h2>
+            <div className="text-center mb-12">
+              <h2 className="text-2xl font-semibold mb-4">
+                {t("contact.faq.title")}
+              </h2>
+              <p className="text-light-darker max-w-2xl mx-auto">
+                {t("contact.faq.subtitle")}
+              </p>
+            </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="card">
-                <h3 className="text-xl font-bold mb-3">
+                <h3 className="text-lg font-semibold mb-3">
                   {t("contact.faq.questions.services.question")}
                 </h3>
-                <p className="text-light-darker">
+                <p className="text-light-darker text-sm leading-relaxed">
                   {t("contact.faq.questions.services.answer")}
                 </p>
               </div>
 
               <div className="card">
-                <h3 className="text-xl font-bold mb-3">
+                <h3 className="text-lg font-semibold mb-3">
                   {t("contact.faq.questions.process.question")}
                 </h3>
-                <p className="text-light-darker">
+                <p className="text-light-darker text-sm leading-relaxed">
                   {t("contact.faq.questions.process.answer")}
                 </p>
               </div>
 
               <div className="card">
-                <h3 className="text-xl font-bold mb-3">
+                <h3 className="text-lg font-semibold mb-3">
                   {t("contact.faq.questions.pricing.question")}
                 </h3>
-                <p className="text-light-darker">
+                <p className="text-light-darker text-sm leading-relaxed">
                   {t("contact.faq.questions.pricing.answer")}
+                </p>
+              </div>
+
+              <div className="card">
+                <h3 className="text-lg font-semibold mb-3">
+                  {t("contact.faq.questions.timeline.question")}
+                </h3>
+                <p className="text-light-darker text-sm leading-relaxed">
+                  {t("contact.faq.questions.timeline.answer")}
                 </p>
               </div>
             </div>

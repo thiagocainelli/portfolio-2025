@@ -14,9 +14,9 @@ interface SEOProps {
 }
 
 const SEO: React.FC<SEOProps> = ({
-  title = "Thiago Cainelli | Fullstack Developer",
-  description = "Portfolio of a Fullstack Developer specializing in TypeScript, Node.js, React.js, and modern web technologies. View my projects, skills, and experience.",
-  keywords = "Fullstack Developer, TypeScript, Node.js, React.js, Web Development, Portfolio, Software Engineer, Frontend, Backend",
+  title = "Thiago Cainelli | Software Engineer",
+  description = "Software Engineer specialized in architecture and development of high-quality software systems. Expertise in React.js, Node.js, Python, TypeScript, React Native, and Generative AI solutions.",
+  keywords = "Software Engineer, TypeScript, Node.js, React.js, Python, React Native, Generative AI, LLMs, LangChain, Web Development, Portfolio, Software Architecture, Frontend, Backend",
   author = "Thiago Cainelli",
   image = "/images/thiagocainelli.jpeg",
   url = "https://thiagocainelli.dev",
@@ -25,7 +25,7 @@ const SEO: React.FC<SEOProps> = ({
   canonical,
 }) => {
   const fullTitle =
-    title === "Thiago Cainelli | Fullstack Developer"
+    title === "Thiago Cainelli | Software Engineer"
       ? title
       : `${title} | Thiago Cainelli`;
   const fullUrl = canonical || url;
@@ -83,7 +83,7 @@ const SEO: React.FC<SEOProps> = ({
           "@context": "https://schema.org",
           "@type": "Person",
           name: "Thiago Cainelli",
-          jobTitle: "Fullstack Developer",
+          jobTitle: "Software Engineer",
           description: description,
           url: fullUrl,
           image: fullImage,
@@ -96,7 +96,9 @@ const SEO: React.FC<SEOProps> = ({
             "TypeScript",
             "Node.js",
             "React.js",
-            "Web Development",
+            "Python",
+            "Generative AI",
+            "Software Architecture",
             "Software Engineering",
           ],
           worksFor: {
@@ -118,8 +120,11 @@ const SEO: React.FC<SEOProps> = ({
         crossOrigin="anonymous"
       />
 
-      {/* Favicon */}
-      <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+      {/* Favicon - Multiple formats for better browser compatibility */}
+      <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=2" />
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon.svg?v=2" />
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon.svg?v=2" />
+      <link rel="shortcut icon" href="/favicon.svg?v=2" />
       <link rel="apple-touch-icon" href="/images/thiagocainelli.jpeg" />
     </Helmet>
   );

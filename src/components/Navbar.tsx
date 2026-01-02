@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Menu, X, Cpu } from "lucide-react";
+import { Menu, X, Code2 } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import LanguageSelector from "./LanguageSelector";
 
@@ -29,8 +29,6 @@ const Navbar: React.FC = () => {
   const navLinks = [
     { path: "/", label: t("nav.home") },
     { path: "/about", label: t("nav.about") },
-    // { path: '/skills', label: t('nav.skills') },
-    // { path: '/projects', label: t('nav.projects') },
     { path: "/contact", label: t("nav.contact") },
   ];
 
@@ -45,9 +43,9 @@ const Navbar: React.FC = () => {
     >
       <div className="container mx-auto px-4 md:px-6">
         <nav className="flex items-center justify-between">
-          <NavLink to="/" className="flex items-center gap-2 text-xl font-bold">
-            <Cpu className="text-primary" size={24} />
-            <span className="text-gradient">Thiago Cainelli</span>
+          <NavLink to="/" className="flex items-center gap-2 text-xl font-semibold">
+            <Code2 className="text-primary" size={22} />
+            <span className="text-white">Thiago Cainelli</span>
           </NavLink>
 
           {/* Desktop Navigation */}
@@ -86,7 +84,7 @@ const Navbar: React.FC = () => {
           animate={{ opacity: 1, height: "auto" }}
           exit={{ opacity: 0, height: 0 }}
           transition={{ duration: 0.3 }}
-          className="md:hidden glass border-t border-dark-lightest"
+          className="md:hidden bg-dark-lighter border-t border-white/5"
         >
           <div className="container mx-auto px-4 py-4 flex flex-col space-y-3">
             {navLinks.map((link) => (

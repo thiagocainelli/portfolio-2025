@@ -3,20 +3,22 @@
 @tailwind utilities;
 
 :root {
-  --primary: #0ea5e9;
-  --secondary: #8b5cf6;
-  --dark: #111827;
-  --light: #f9fafb;
-  --accent: #10b981;
+  --primary: #2563eb;
+  --secondary: #475569;
+  --dark: #0f172a;
+  --light: #f8fafc;
+  --accent: #0ea5e9;
 }
 
 body {
   @apply bg-dark text-light font-sans;
   overflow-x: hidden;
+  font-weight: 400;
+  letter-spacing: -0.01em;
 }
 
 .text-gradient {
-  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary;
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary-light;
 }
 
 .bg-grid {
@@ -32,36 +34,36 @@ body {
 }
 
 .glass {
-  @apply bg-dark-lighter bg-opacity-70 backdrop-blur-md border border-white/10 shadow-lg;
+  @apply bg-dark-lighter border border-white/5 shadow-soft;
 }
 
 .card {
-  @apply glass rounded-xl p-6 transition-all duration-300 hover:shadow-primary/20 hover:shadow-lg;
+  @apply bg-dark-lighter border border-white/5 rounded-lg p-6 transition-all duration-200 shadow-soft hover:shadow-medium hover:border-white/10;
 }
 
 .btn {
-  @apply px-6 py-2 rounded-lg font-medium transition-all duration-300 transform hover:scale-105;
+  @apply px-6 py-2.5 rounded-md font-medium transition-all duration-200;
 }
 
 .btn-primary {
-  @apply btn bg-primary hover:bg-primary-dark text-white;
+  @apply btn bg-primary hover:bg-primary-dark text-white shadow-soft;
 }
 
 .btn-secondary {
-  @apply btn bg-secondary hover:bg-secondary-dark text-white;
+  @apply btn bg-secondary hover:bg-secondary-dark text-white shadow-soft;
 }
 
 .btn-outline {
-  @apply btn border border-primary text-primary hover:bg-primary hover:text-white;
+  @apply btn border border-primary/50 text-primary hover:bg-primary/10 hover:border-primary;
 }
 
 .nav-link {
-  @apply relative px-4 py-2 text-light-darker hover:text-white transition-colors duration-300;
+  @apply relative px-4 py-2 text-light-darker hover:text-white transition-colors duration-200 font-medium;
 }
 
 .nav-link::after {
   content: '';
-  @apply absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-secondary transition-all duration-300;
+  @apply absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-200;
 }
 
 .nav-link:hover::after {
@@ -77,11 +79,11 @@ body {
 }
 
 .glow-border {
-  @apply border border-primary/50 animate-glow;
+  @apply border border-primary/30;
 }
 
 .code-block {
-  @apply font-mono text-sm bg-dark-lightest p-4 rounded-lg overflow-x-auto;
+  @apply font-mono text-sm bg-dark-lighter border border-white/5 p-4 rounded-md overflow-x-auto;
 }
 
 .timeline-item {
@@ -98,7 +100,7 @@ body {
 }
 
 .skill-badge {
-  @apply px-3 py-1 rounded-full text-sm font-medium bg-dark-lighter text-light-darker border border-dark-lightest transition-all duration-300 hover:border-primary/50 hover:text-white;
+  @apply px-3 py-1.5 rounded-md text-sm font-medium bg-dark-lighter text-light-darker border border-white/5 transition-all duration-200 hover:border-primary/30 hover:text-white;
 }
 
 .project-card {
@@ -114,26 +116,9 @@ body {
 }
 
 .contact-input {
-  @apply w-full bg-dark-lighter border border-dark-lightest rounded-lg px-4 py-3 text-light focus:outline-none focus:border-primary transition-colors duration-300;
+  @apply w-full bg-dark-lighter border border-white/5 rounded-md px-4 py-3 text-light focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/20 transition-all duration-200;
 }
 
-.animated-bg {
-  background: linear-gradient(-45deg, #111827, #1e3a8a, #1e40af, #0ea5e9);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
 
 /* Scrollbar styling */
 ::-webkit-scrollbar {
@@ -150,5 +135,5 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  @apply bg-primary/50;
+  @apply bg-primary/40;
 }

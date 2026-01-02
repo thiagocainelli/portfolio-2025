@@ -5,49 +5,55 @@ export default {
     extend: {
       colors: {
         primary: {
+          DEFAULT: '#2563eb',
+          dark: '#1e40af',
+          light: '#3b82f6',
+          lighter: '#60a5fa',
+        },
+        secondary: {
+          DEFAULT: '#475569',
+          dark: '#334155',
+          light: '#64748b',
+        },
+        dark: {
+          DEFAULT: '#0f172a',
+          lighter: '#1e293b',
+          lightest: '#334155',
+        },
+        light: {
+          DEFAULT: '#f8fafc',
+          darker: '#f1f5f9',
+          darkest: '#e2e8f0',
+        },
+        accent: {
           DEFAULT: '#0ea5e9',
           dark: '#0284c7',
           light: '#38bdf8',
         },
-        secondary: {
-          DEFAULT: '#8b5cf6',
-          dark: '#7c3aed',
-          light: '#a78bfa',
-        },
-        dark: {
-          DEFAULT: '#111827',
-          lighter: '#1f2937',
-          lightest: '#374151',
-        },
-        light: {
-          DEFAULT: '#f9fafb',
-          darker: '#f3f4f6',
-          darkest: '#e5e7eb',
-        },
-        accent: {
-          DEFAULT: '#10b981',
-          dark: '#059669',
-          light: '#34d399',
-        },
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
-        mono: ['JetBrains Mono', 'monospace'],
+        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+        serif: ['Georgia', 'serif'],
+        mono: ['JetBrains Mono', 'Consolas', 'monospace'],
+      },
+      fontWeight: {
+        normal: '400',
+        medium: '500',
+        semibold: '600',
+        bold: '700',
       },
       animation: {
-        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-        'float': 'float 6s ease-in-out infinite',
-        'glow': 'glow 2s ease-in-out infinite alternate',
+        'fade-in': 'fadeIn 0.5s ease-in-out',
       },
       keyframes: {
-        float: {
-          '0%, 100%': { transform: 'translateY(0)' },
-          '50%': { transform: 'translateY(-10px)' },
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
         },
-        glow: {
-          '0%': { boxShadow: '0 0 5px rgba(14, 165, 233, 0.5)' },
-          '100%': { boxShadow: '0 0 20px rgba(14, 165, 233, 0.8), 0 0 30px rgba(139, 92, 246, 0.6)' },
-        },
+      },
+      boxShadow: {
+        'soft': '0 2px 8px rgba(0, 0, 0, 0.1)',
+        'medium': '0 4px 12px rgba(0, 0, 0, 0.15)',
       },
     },
   },

@@ -29,23 +29,23 @@ const Particles: React.FC = () => {
 
     const initParticles = () => {
       particles.current = [];
-      const particleCount = Math.min(Math.floor(window.innerWidth * 0.05), 100);
+      const particleCount = Math.min(Math.floor(window.innerWidth * 0.03), 60);
       
       for (let i = 0; i < particleCount; i++) {
-        const size = Math.random() * 2 + 0.5;
+        const size = Math.random() * 1.5 + 0.5;
         particles.current.push({
           x: Math.random() * canvas.width,
           y: Math.random() * canvas.height,
           size,
-          speedX: (Math.random() - 0.5) * 0.5,
-          speedY: (Math.random() - 0.5) * 0.5,
+          speedX: (Math.random() - 0.5) * 0.3,
+          speedY: (Math.random() - 0.5) * 0.3,
           color: getRandomColor(),
         });
       }
     };
 
     const getRandomColor = () => {
-      const colors = ['rgba(14, 165, 233, 0.7)', 'rgba(139, 92, 246, 0.7)', 'rgba(16, 185, 129, 0.7)'];
+      const colors = ['rgba(37, 99, 235, 0.15)', 'rgba(71, 85, 105, 0.12)', 'rgba(14, 165, 233, 0.1)'];
       return colors[Math.floor(Math.random() * colors.length)];
     };
 
@@ -85,10 +85,10 @@ const Particles: React.FC = () => {
         const dy = particle.y - particles.current[i].y;
         const distance = Math.sqrt(dx * dx + dy * dy);
         
-        if (distance < 150) {
+        if (distance < 120) {
           ctx.beginPath();
-          ctx.strokeStyle = `rgba(255, 255, 255, ${0.1 * (1 - distance / 150)})`;
-          ctx.lineWidth = 0.5;
+          ctx.strokeStyle = `rgba(255, 255, 255, ${0.05 * (1 - distance / 120)})`;
+          ctx.lineWidth = 0.3;
           ctx.moveTo(particle.x, particle.y);
           ctx.lineTo(particles.current[i].x, particles.current[i].y);
           ctx.stroke();

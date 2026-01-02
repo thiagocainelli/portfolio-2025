@@ -19,14 +19,14 @@ const CodeBlock: React.FC<CodeBlockProps> = ({
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       viewport={{ once: true }}
-      className="rounded-lg overflow-hidden shadow-lg"
+      className="rounded-md overflow-hidden border border-white/5 shadow-soft"
     >
-      <div className="flex items-center justify-between bg-dark-lightest px-4 py-2 border-b border-dark-lightest">
+      <div className="flex items-center justify-between bg-dark-lighter px-4 py-2.5 border-b border-white/5">
         <div className="flex items-center gap-2">
           <Terminal size={16} className="text-primary" />
           <span className="text-sm font-medium">{title}</span>
         </div>
-        <div className="text-xs text-light-darker">{language}</div>
+        <div className="text-xs text-light-darker font-mono">{language}</div>
       </div>
       <pre className="code-block">
         <code>{code}</code>
