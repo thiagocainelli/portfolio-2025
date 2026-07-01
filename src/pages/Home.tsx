@@ -301,7 +301,7 @@ engineer.sayHello();`;
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               {[
                 { key: "projects", icon: CheckCircle, value: "20+" },
-                { key: "experience", icon: Clock, value: "2023" },
+                { key: "experience", icon: Clock, value: "2021" },
                 { key: "satisfaction", icon: TrendingUp, value: "100%" },
                 { key: "delivery", icon: Zap, value: "95%" },
               ].map(({ key, icon: Icon, value }) => (
